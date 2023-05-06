@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+:root{
+    --text-color:#000;
+    --text-secondary:#918d8d;
+}
+
+html{
+    font-size: 55.2%;
+}
+
+section{
+    padding: 2rem;
+}
+
+.navbar{
+    border-bottom: 1px solid var(--text-secondary);
+}
+.navbar .content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .content > h1{
+    font-family: 'poppins', serif;
+    font-style: italic;
+    font-size: 3rem;
+}
+
+.navbar .content ul{
+    display: flex;
+}
+.navbar .content ul ol{
+    border: 1px solid var(--text-color);
+    padding: .8rem;
+}
+.navbar .content ul ol a{
+    color: var(--text-color);
+    font-size: 1.5rem;
+    font-family: 'poppins',serif;
+}
+
+
+/* features infomation */
+.infomation{
+    font-family: 'poppins',serif;
+    text-align: center;
+}
+.infomation > h1, span{
+    font-size: 3rem;
+    font-weight: 600;
+}
+.infomation p{
+    padding-top: 1em;
+    font-size: 1.4rem;
+    font-weight: 100;
+}
+.info .main-information{
+    display: grid;
+    margin: 8vh 0;
+    grid-template-columns: repeat(2,1fr);
+    /* gap: .8em; */
+}
+
+.info .main-information{
+    font-family: 'poppins',serif;
+    font-size: 1rem;
+}
+
+.info .main-information .mountain{
+    display: block;
+    margin: 0 auto;
+    border-radius: 2em;
+    box-shadow: 10px 10px 6px rgba(0, 0, 0, 1);
+}
+.info .main-information .content-information p{
+    font-style: italic;
+    margin-top: 50px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+.info .main-information .content-information .user-client{
+    text-align: center;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
+.info .main-information .content-information .user-client .group-text{
+    margin: 2rem;
+    text-align: left;
+    font-size: 1.5rem;
+}
+.info .main-information .content-information .user-client .group-text h4{
+    font-weight: 100;
+}
+.info .main-information .content-information .user-client #user{
+    font-size: 5rem;
+    border: none;
+    padding: 2rem;
+    background-color: var(--text-secondary);
+    border-radius: 50%;
+}
+.info .main-information hr{
+    width: 15%;
+    margin-top: 2rem;
+    margin-left: 45%;
+}
+.info .main-information .group-services .d-3{
+    font-style: normal;
+    font-weight: 600;
+    text-align: start;
+    font-size: 2rem;
+    width: 80%;
+    margin: 3rem auto;
+}
+.info .main-information .help-information{
+    margin: 3rem auto;
+    width: 80%;
+}
+.info .main-information .help-information .group-inform{
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.info .main-information .help-information .group-inform h1{
+    background-color: var(--text-secondary);
+    border-radius: 50%;
+    padding: 12px 20px;
+    font-weight: 400;
+    margin-right: 2rem;
+}
+.info .main-information .help-information .group-inform h3{
+    font-size: 1.5rem;
+    font-weight: 400;
+    width: 65%;
+}
+
+
+
+.info .card{
+    background-color: darkgray;
+    padding: 3em;
+    width: 300px;
+    height: max-content;
+    border-radius: 8px;
+    margin: 0 auto;
+}
+.info .card > h3{
+    font-size: 2rem;
+    font-weight: 600;
+}
+.info .card > p{
+    font-size: 1.3rem;
+    padding: 1rem 0;
+    font-weight: 100;
+}
+.info .card .form-group{
+    padding-top: .5rem;
+}
+
+.info .card .form-group label{
+    display: block;
+    font-size: 1.5rem;
+    padding-top: 2rem;
+}
+.info .card .form-group input{
+    padding: 1rem;
+    width: 80%;
+    border-radius: .5rem;
+    border: none;
+    margin-top: .5rem;
+}
+.info .card .form-group select{
+    width: 86%;
+    padding: .8rem;
+    display: block;
+    border-radius: .5rem;
+    color: var(--text-secondary);
+    font-size: 1.5rem;
+    margin: .5rem 0;
+}
+.info .card .form-group button{
+    background-color: var(--text-color);
+    font-size: 2rem;
+    color: #fff;
+    padding: 1rem;
+    border: none;
+    margin: 1rem 0;
+    width: 86%;
+    border-radius: .5rem;
+    text-transform: uppercase;
+}
+
+@media (max-width:1000px) {
+    .main-information img{
+        width: 80%;
+    }
+    .main-information .card{
+        width: 80%;
+    }
+}
+@media (max-width:700px) {
+    .info .main-information{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+@media (max-width:400px) {
+    html{
+        font-size: 45%;
+    }
+}
