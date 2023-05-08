@@ -54,7 +54,7 @@ section{
     text-align: center;
 }
 .infomation > h1, span{
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 600;
 }
 .infomation p{
@@ -64,16 +64,17 @@ section{
 }
 .info .main-information{
     display: grid;
-    margin: 8vh 0;
+    margin: 4.5vh 0;
     grid-template-columns: repeat(2,1fr);
-    /* gap: .8em; */
 }
 
 .info .main-information{
     font-family: 'poppins',serif;
     font-size: 1rem;
 }
-
+.info .main-information img{
+    width: 300px;
+}
 .info .main-information .mountain{
     display: block;
     margin: 0 auto;
@@ -198,6 +199,18 @@ section{
     border-radius: .5rem;
     text-transform: uppercase;
 }
+footer{
+    background-color: var(--text-secondary);
+    height: 6vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer h1{
+    font-family: 'poppins',sans-serif;
+    font-weight: 400;
+}
+
 
 @media (max-width:1000px) {
     .main-information img{
@@ -217,3 +230,25 @@ section{
         font-size: 45%;
     }
 }
+
+
+/* custom scrollbar */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
